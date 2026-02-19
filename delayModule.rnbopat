@@ -9,10 +9,309 @@
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 1039.0, 712.0, 1154.0, 480.0 ],
+        "rect": [ 227.0, 306.0, 1154.0, 481.0 ],
         "default_fontname": "Lato",
         "title": "delayModule",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-31",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 569.0, 14.0, 63.0, 23.0 ],
+                    "rnbo_classname": "feedback~",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "feedback~_obj-31",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Signal to feed back.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "output": {
+                                "attrOrProp": 1,
+                                "digest": "Signal that was fed back (with one signal buffer delay).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "reset": {
+                                "attrOrProp": 1,
+                                "digest": "Clears/resets the feedback buffer",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "signal",
+                                "digest": "Signal to feed back.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": "signal",
+                                "digest": "Signal that was fed back (with one signal buffer delay).",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "feedback~",
+                        "aliasOf": "feedback~",
+                        "classname": "feedback~",
+                        "operator": 0,
+                        "versionId": -1677864334,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "feedback~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 477.0, 14.0, 63.0, 23.0 ],
+                    "rnbo_classname": "feedback~",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "feedback~_obj-30",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Signal to feed back.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "output": {
+                                "attrOrProp": 1,
+                                "digest": "Signal that was fed back (with one signal buffer delay).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "reset": {
+                                "attrOrProp": 1,
+                                "digest": "Clears/resets the feedback buffer",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "signal",
+                                "digest": "Signal to feed back.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": "signal",
+                                "digest": "Signal that was fed back (with one signal buffer delay).",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "feedback~",
+                        "aliasOf": "feedback~",
+                        "classname": "feedback~",
+                        "operator": 0,
+                        "versionId": -1677864334,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "feedback~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-28",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 503.0, 55.0, 64.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "r_obj-28",
+                    "text": "r feedback"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-29",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 480.0, 80.0, 33.0, 23.0 ],
+                    "rnbo_classname": "*~",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "*~_obj-29",
+                    "text": "*~ 0."
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-27",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 584.0, 55.0, 64.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "r_obj-27",
+                    "text": "r feedback"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-26",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 561.0, 80.0, 33.0, 23.0 ],
+                    "rnbo_classname": "*~",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "*~_obj-26",
+                    "text": "*~ 0."
+                }
+            },
+            {
+                "box": {
+                    "fontname": "Lato",
+                    "fontsize": 12.0,
+                    "id": "obj-25",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 139.0, 36.0, 178.0, 23.0 ],
+                    "rnbo_classname": "delay~",
+                    "rnbo_extra_attributes": {
+                        "maxdelayms": 0.0,
+                        "interp": "linear",
+                        "ramp": 50.0
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "delay~_obj-25",
+                    "text": "delay~ @maxsize samplerate*20"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-24",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 820.0, 92.0, 50.0, 23.0 ],
+                    "rnbo_classname": "message",
+                    "rnbo_extra_attributes": {
+                        "storeempty": 0,
+                        "text": ""
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "message_obj-24",
+                    "text": "960000"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 765.5, 55.0, 65.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 3,
+                    "rnbo_uniqueid": "r_obj-22",
+                    "text": "r panRamp"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 406.0, 150.0, 50.0, 23.0 ],
+                    "rnbo_classname": "message",
+                    "rnbo_extra_attributes": {
+                        "storeempty": 0,
+                        "text": ""
+                    },
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "message_obj-20",
+                    "text": "960000"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-18",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 308.5, 122.0, 74.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 4,
+                    "rnbo_uniqueid": "r_obj-18",
+                    "text": "r delayRamp"
+                }
+            },
             {
                 "box": {
                     "id": "obj-17",
@@ -22,7 +321,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 232.0, 169.0, 172.0, 23.0 ],
                     "rnbo_classname": "rampsmooth~",
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "rampsmooth~_obj-17",
                     "text": "rampsmooth~ 150000 150000"
                 }
@@ -39,7 +338,7 @@
                     "rnbo_extra_attributes": {
                         "unit": "ms"
                     },
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "sig~_obj-16",
                     "text": "sig~"
                 }
@@ -53,7 +352,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 541.0, 86.0, 172.0, 23.0 ],
                     "rnbo_classname": "rampsmooth~",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "rampsmooth~_obj-13",
                     "text": "rampsmooth~ 150000 150000"
                 }
@@ -70,7 +369,7 @@
                     "rnbo_extra_attributes": {
                         "unit": "ms"
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "sig~_obj-12",
                     "text": "sig~"
                 }
@@ -96,7 +395,7 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 562.0, 169.0, 77.0, 23.0 ],
+                    "patching_rect": [ 562.0, 170.0, 77.0, 23.0 ],
                     "rnbo_classname": "mix~",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "mix~_obj-14",
@@ -110,39 +409,11 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 482.0, 169.0, 78.0, 23.0 ],
+                    "patching_rect": [ 482.0, 170.0, 78.0, 23.0 ],
                     "rnbo_classname": "mix~",
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "mix~_obj-15",
                     "text": "mix~"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-124",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 562.0, 141.0, 78.0, 23.0 ],
-                    "rnbo_classname": "r~",
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "r~_obj-124",
-                    "text": "r~ feedbackR"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-123",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 482.0, 141.0, 77.0, 23.0 ],
-                    "rnbo_classname": "r~",
-                    "rnbo_serial": 2,
-                    "rnbo_uniqueid": "r~_obj-123",
-                    "text": "r~ feedbackL"
                 }
             },
             {
@@ -372,7 +643,7 @@
                         "ramp": 50.0,
                         "maxsize": "samplerate"
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "delay~_obj-6",
                     "text": "delay~"
                 }
@@ -478,7 +749,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 30.0, 188.0, 153.0, 23.0 ],
+                    "patching_rect": [ 30.0, 170.0, 153.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
                         "meta": ""
@@ -657,7 +928,7 @@
                         "ramp": 50.0,
                         "maxsize": "samplerate"
                     },
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "delay~_obj-1",
                     "text": "delay~"
                 }
@@ -672,7 +943,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-31", 0 ],
+                    "order": 0,
+                    "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-8", 0 ],
+                    "order": 1,
                     "source": [ "obj-10", 0 ]
                 }
             },
@@ -702,18 +981,6 @@
                     "destination": [ "obj-9", 0 ],
                     "order": 0,
                     "source": [ "obj-12", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-15", 0 ],
-                    "source": [ "obj-123", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-14", 0 ],
-                    "source": [ "obj-124", 0 ]
                 }
             },
             {
@@ -765,8 +1032,88 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-17", 2 ],
+                    "order": 1,
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-17", 1 ],
+                    "order": 2,
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 1 ],
+                    "order": 0,
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-16", 0 ],
                     "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-11", 2 ],
+                    "order": 1,
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-11", 1 ],
+                    "order": 2,
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-13", 2 ],
+                    "order": 3,
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-13", 1 ],
+                    "order": 4,
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-24", 1 ],
+                    "order": 0,
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-26", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 1 ],
+                    "source": [ "obj-27", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-29", 1 ],
+                    "source": [ "obj-28", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "source": [ "obj-29", 0 ]
                 }
             },
             {
@@ -785,7 +1132,27 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-29", 0 ],
+                    "source": [ "obj-30", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-31", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-30", 0 ],
+                    "order": 0,
+                    "source": [ "obj-4", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-7", 0 ],
+                    "order": 1,
                     "source": [ "obj-4", 0 ]
                 }
             },

@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 372.0, 189.0, 1000.0, 759.0 ],
+        "rect": [ 54.0, 188.0, 705.0, 759.0 ],
         "boxes": [
             {
                 "box": {
@@ -162,7 +162,7 @@
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 0,
-                    "patching_rect": [ 359.0, 413.0, 35.0, 22.0 ],
+                    "patching_rect": [ 359.0, 446.0, 35.0, 22.0 ],
                     "text": "dac~"
                 }
             },
@@ -264,23 +264,8 @@
                     "outlettype": [ "signal", "signal", "list" ],
                     "patching_rect": [ 359.0, 377.0, 102.0, 22.0 ],
                     "rnboattrcache": {
-                        "feedback": {
-                            "label": "feedback",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "speed": {
-                            "label": "speed",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "lowDelay": {
                             "label": "lowDelay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "delayRamp": {
-                            "label": "delayRamp",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -289,23 +274,38 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "highDelay": {
-                            "label": "highDelay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "panRamp": {
                             "label": "panRamp",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "randomizeMS": {
-                            "label": "randomizeMS",
-                            "isEnum": 1,
-                            "parsestring": "\"off\" \"on\""
+                        "delayRamp": {
+                            "label": "delayRamp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "feedback": {
+                            "label": "feedback",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "highDelay": {
+                            "label": "highDelay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "speed": {
+                            "label": "speed",
+                            "isEnum": 0,
+                            "parsestring": ""
                         },
                         "randomizePan": {
                             "label": "randomizePan",
+                            "isEnum": 1,
+                            "parsestring": "\"off\" \"on\""
+                        },
+                        "randomizeMS": {
+                            "label": "randomizeMS",
                             "isEnum": 1,
                             "parsestring": "\"off\" \"on\""
                         }
@@ -335,8 +335,17 @@
                         "subtype": "Undefined",
                         "embed": 1,
                         "snapshot": {
-                            "randomizePan": {
+                            "feedback": {
+                                "value": 0.999
+                            },
+                            "randomizeMS": {
                                 "value": 0.0
+                            },
+                            "randomizePan": {
+                                "value": 1.0
+                            },
+                            "mix": {
+                                "value": 0.7000000000000001
                             },
                             "__sps": {
                                 "delayDevice[1]": {
@@ -413,26 +422,17 @@
                             "panRamp": {
                                 "value": 0.0
                             },
-                            "randomizeMS": {
-                                "value": 0.0
-                            },
-                            "feedback": {
-                                "value": 0.999
-                            },
-                            "highDelay": {
-                                "value": 982.0
-                            },
-                            "delayRamp": {
-                                "value": 0.0
+                            "speed": {
+                                "value": 1.0
                             },
                             "lowDelay": {
                                 "value": 100.0
                             },
-                            "speed": {
-                                "value": 50.0
+                            "delayRamp": {
+                                "value": 0.0
                             },
-                            "mix": {
-                                "value": 0.5
+                            "highDelay": {
+                                "value": 2444.0
                             },
                             "__presetid": "glitchDelay"
                         },
@@ -449,8 +449,17 @@
                                     "subtype": "",
                                     "embed": 1,
                                     "snapshot": {
-                                        "randomizePan": {
+                                        "feedback": {
+                                            "value": 0.999
+                                        },
+                                        "randomizeMS": {
                                             "value": 0.0
+                                        },
+                                        "randomizePan": {
+                                            "value": 1.0
+                                        },
+                                        "mix": {
+                                            "value": 0.7000000000000001
                                         },
                                         "__sps": {
                                             "delayDevice[1]": {
@@ -527,26 +536,17 @@
                                         "panRamp": {
                                             "value": 0.0
                                         },
-                                        "randomizeMS": {
-                                            "value": 0.0
-                                        },
-                                        "feedback": {
-                                            "value": 0.999
-                                        },
-                                        "highDelay": {
-                                            "value": 982.0
-                                        },
-                                        "delayRamp": {
-                                            "value": 0.0
+                                        "speed": {
+                                            "value": 1.0
                                         },
                                         "lowDelay": {
                                             "value": 100.0
                                         },
-                                        "speed": {
-                                            "value": 50.0
+                                        "delayRamp": {
+                                            "value": 0.0
                                         },
-                                        "mix": {
-                                            "value": 0.5
+                                        "highDelay": {
+                                            "value": 2444.0
                                         },
                                         "__presetid": "glitchDelay"
                                     },
@@ -648,6 +648,14 @@
         ],
         "parameters": {
             "obj-2": [ "rnbo~[1]", "rnbo~[1]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
